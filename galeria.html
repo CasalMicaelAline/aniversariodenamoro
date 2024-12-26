@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micael e Aline</title>
+    <link rel="shortcut icon" href="imagens/coracao.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fffee1;
+            color: #333;
+        }
+
+        header {
+            background: #ffe761;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 4.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #ffe761;
+            color: black;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffd900;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d6d44f;
+        }
+
+        /* Lightbox container (modal) */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        /* Mostrar o lightbox quando o target é acionado */
+        .lightbox:target {
+            display: flex;
+        }
+
+        /* Imagem dentro do lightbox */
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Botão de fechar */
+        .lightbox .close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .lightbox .close:hover {
+            color: #ff6f61;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Galeria de Fotos</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Linha do Tempo</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="mensagens.html">Mensagens</a>
+    </nav>
+
+    <div class="container">
+        <div class="gallery">
+            <a href="#img1">
+                <img src="imagens/20231231_155346.jpg" alt="Momento especial 1"> 
+            </a>
+            <a href="#img2">
+                <img src="imagens/IMG_20241115_121255.jpg" alt="Momento especial 2"> 
+            </a>
+            <a href="#img3">
+                <img src="imagens/20240121_131137.jpg" alt="Momento especial 3"> 
+            </a>
+            <a href="#img4">
+                <img src="imagens/20240210_151409.jpg" alt="Momento especial 4"> 
+            </a>
+            <a href="#img5">
+                <img src="imagens/20240218_142828.jpg" alt="Momento especial 5">
+            </a>
+            <a href="#img6">
+                <img src="imagens/20240804_124158.jpg" alt="Momento especial 6"> 
+            </a>
+            <a href="#img7">
+                <img src="imagens/20231202_121427.jpg" alt="Momento especial 7"> 
+            </a>
+            <a href="#img8">
+                <img src="imagens/20231202_164338.jpg" alt="Momento especial 8"> 
+            </a>
+            <a href="#img9">
+                <img src="imagens/20240824_150741.jpg" alt="Momento especial 8"> 
+            </a>
+            <a href="#img10">
+                <img src="imagens/20240824_161008.jpg" alt="Momento especial 8"> 
+            </a>
+            <a href="#img11">
+                <img src="imagens/20240824_161301.jpg" alt="Momento especial 8"> 
+            </a>
+            <a href="#img12">
+                <img src="imagens/Captura_de_tela_2024-12-13_161228.png" alt="Momento especial 8"> 
+            </a>
+            <a href="#img13">
+                <img src="imagens/Captura_de_tela_2024-12-13_161844.png" alt="Momento especial 8"> 
+            </a>
+            <a href="#img14">
+                <img src="imagens/IMG_20231227_232804_242.jpg" alt="Momento especial 8"> 
+            </a>
+            <a href="#img15">
+                <img src="imagens/IMG_20241115_145035.jpg" alt="Momento especial 8"> 
+            </a>
+            <a href="#img16">
+                <img src="imagens/IMG-20241001-WA0036.jpg" alt="Momento especial 8"> 
+            </a>
+            <a href="#img17">
+                <img src="imagens/IMG-20241015-WA0027.jpg" alt="Momento especial 8"> 
+            </a>
+
+        </div>
+
+        <div id="img1" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/20231231_155346.jpg" alt="Momento especial 1">
+        </div>
+        <div id="img2" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/IMG_20241115_121255.jpg" alt="Momento especial 2">
+        </div>
+        <div id="img3" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/20240121_131137.jpg" alt="Momento especial 3">
+        </div>
+        <div id="img4" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/20240210_151409.jpg" alt="Momento especial 3">
+        </div>
+        <div id="img5" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/20240218_142828.jpg" alt="Momento especial 3">
+        </div>
+        <div id="img6" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/20240804_124158.jpg" alt="Momento especial 3">
+        </div>
+        <div id="img7" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/20231202_121427.jpg" alt="Momento especial 3">
+        </div>
+        <div id="img8" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/20231202_164338.jpg" alt="Momento especial 3">
+        </div>
+        <div id="img9" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/20240824_150741.jpg" alt="Momento especial 3">
+        </div>
+        <div id="img10" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/20240824_161008.jpg" alt="Momento especial 3">
+        </div>
+        <div id="img11" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/20240824_161301.jpg" alt="Momento especial 3">
+        </div>
+        <div id="img12" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/Captura_de_tela_2024-12-13_161228.png" alt="Momento especial 3">
+        </div>
+        <div id="img13" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/Captura_de_tela_2024-12-13_161844.png" alt="Momento especial 3">
+        </div>
+        <div id="img14" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/IMG_20231227_232804_242.jpg" alt="Momento especial 3">
+        </div>
+        <div id="img15" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/IMG_20241115_145035.jpg" alt="Momento especial 3">
+        </div>
+        <div id="img16" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/IMG-20241001-WA0036.jpg" alt="Momento especial 3">
+        </div>
+        <div id="img17" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/IMG-20241015-WA0027.jpg" alt="Momento especial 3">
+        </div>
+    </div>
+
+    <footer><strong>Site criado por um cara que ama Aline do fundo do coração 💓💗💘</strong> </footer>
+
+</body>
+
+</html>

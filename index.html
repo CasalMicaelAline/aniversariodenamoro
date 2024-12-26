@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micael e Aline</title>
+    <link rel="shortcut icon" href="imagens/coracao.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fffee1;
+            color: #333;
+        }
+
+        header {
+            background: #ffe761;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 4.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffd900;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d6d44f;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .timeline {
+            border-left: 3px solid #ff6f61;
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+
+        .timeline h2 {
+            color: #ff6f61;
+        }
+
+        .timeline p {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #ffe761;
+            color: black;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Lightbox container (modal) */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        /* Mostrar o lightbox quando o target é acionado */
+        .lightbox:target {
+            display: flex;
+        }
+
+        /* Imagem dentro do lightbox */
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Botão de fechar */
+        .lightbox .close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .lightbox .close:hover {
+            color: #ff6f61;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Esse é só o começo de nossa História!</h1>
+    </header>
+
+    <nav>
+        <a href="#timeline">Linha do Tempo</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="mensagens.html">Mensagens</a>
+    </nav>
+
+    <div class="container" id="timeline">
+        <h2>Linha do Tempo</h2>
+        <div class="timeline">
+            <p><strong>16 de dezembro de 2022:</strong> Nossa primeira mensagem. 📱</p>
+            <p><strong>22 de junho de 2023:</strong> Nosso primeiro encontro. ❤️</p>
+            <p><strong>31 de dezembro de 2023:</strong> Nosso primeiro beijo. 💋</p>
+            <p><strong>01 de janeiro de 2023:</strong> Começamos a namorar. 💏</p>
+            <p><strong>01 de janeiro de 2024:</strong> 1 Ano de namorooo 🎉💓</p>
+        </div>
+    </div>
+
+    <div class="container" id="gallery">
+        <h2>Fotos</h2>
+        <div class="gallery">
+            <a href="#img1">
+                <img src="imagens/20231231_155346.jpg" alt="Momento especial 1">
+            </a>
+            <a href="#img2">
+                <img src="imagens/IMG_20241115_121255.jpg" alt="Momento especial 2">
+            </a>
+            <a href="#img3">
+                <img src="imagens/20240121_131137.jpg" alt="Momento especial 3">
+            </a>
+        </div>
+
+        <div id="img1" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/20231231_155346.jpg" alt="Momento especial 1">
+        </div>
+        <div id="img2" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/IMG_20241115_121255.jpg" alt="Momento especial 2">
+        </div>
+        <div id="img3" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="imagens/20240121_131137.jpg" alt="Momento especial 3">
+        </div>
+
+    </div>
+
+    <div class="container">
+        <audio controls>
+            <source src="musicas/chicago.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </div>
+
+    <div class="container" id="messages">
+        <h2>Mensagens</h2>
+        <p>"Eu amo cada momento ao seu lado. Obrigado por ser minha inspiração todos os dias. ❤️"</p>
+        <p>"Cada sorriso seu ilumina meu mundo. Você é o meu tudo."</p>
+    </div>
+
+    <footer><strong>Site criado por um cara que ama Aline do fundo do coração 💓💗💘</strong> </footer>
+</body>
+
+</html>

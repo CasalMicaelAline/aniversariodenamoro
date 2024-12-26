@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micael e Aline</title>
+    <link rel="shortcut icon" href="imagens/coracao.ico" type="image/x-icon">
+    <style>
+        @charset "UTF-8";
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+        :root {
+            --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+            --fonte2: 'Passion  One', cursive;
+            --fonte3: 'Sriracha', cursive;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            margin: auto;
+            min-height: 100vh;
+            background-color: #fffee1;;
+            font-family: var(--fonte1);
+            width: 100%;
+        }
+
+        .container{
+            margin: auto;
+            width: 70%;
+        }
+
+        header {
+            background: #ffe761;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: #ffd900;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d6d44f;
+        }
+
+
+        header h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            font-size: 4.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header>p {
+            padding-bottom: 50px;
+        }
+
+        section {
+            margin: auto;
+            width: 100%;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            line-height: 2em;
+            font-family: var(--fonte3);
+            font-size: 3.5vw;
+        }
+
+        section>p {
+            padding-bottom: 2em;
+        }
+
+        section.imagem>p {
+            background-color: rgba(0, 0, 0, 0.281);
+            display: inline-block;
+            padding: 5px;
+            text-shadow: 1px 1px 0px black;
+        }
+
+        section#img01 {
+            background-image: url(imagens/20240824_150741.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        section#img02 {
+            background-image: url(imagens/20240824_161008.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        section#img03 {
+            background-image: url(imagens/20240824_161301.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        section#img04 {
+            background-image: url(imagens/IMG-20241015-WA0027.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        section#img05 {
+            background-image: url(imagens/Captura_de_tela_2024-12-13_161844.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        section.normal {
+            margin-top: 20px;
+            background-color: white;
+            color: black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        section.imagem {
+            background-color: rgb(83, 81, 81);
+            color: white;
+            box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #ffe761;
+            color: black;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Um pouco de nós</h1>
+    </header>
+    <nav>
+        <a href="index.html">Linha do Tempo</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="mensagens.html">Mensagens</a>
+    </nav>
+    <div class="container">
+        <audio controls>
+            <source src="musicas/alemdotempo.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </div>
+    <div class="container">
+        <section class="normal">
+            <p>
+                Oi meu amor! Tudo bem?
+                Acabou que talvez você tenha advinhado kkk. <br>
+                Agora vou falar um pouquinho sobre nós S2.
+            </p>
+        </section>
+        <section class="imagem" id="img01">
+            <p>
+                Vez ou outra você diz que sou "apressado" ou ansioso... De fato, tem fundo de verdade rsr.
+                Mas dos primeiros momentos que passamos juntos, seja jogando ou apenas conversando, algo já me dizia que 
+                algo estava por vim.
+            </p>
+        </section>
+        <section class="normal">
+            <p>
+                De fato, esse algo veio e chegou com tudo kkkk. 
+                Você se tornou o amor da minha vida, o alguém onde eu posso depositar minha total confiança. 
+                Completamos 1 ano de namoro, obviamente nem tudo foi flores, como qualquer coisa na vida, mas é assim que ficamos fortes, 
+                cada momento, cada situação boa um não tão boa que passamos serviu de aprendizado para que possamos ficar cada vez mais firmes e fortes um ao outro!
+            </p>
+        </section>
+        <section class="imagem" id="img02">
+            <p>
+                Esse ano que se passou só serviu para que eu pudesse perceber do quanto realmente eu te amo. <br>
+                Eu tenho fé em Deus de que anos muito melhores estão por vim, onde a gente vai ficar cada vez mais unido, e mais amor haverá no nosso relaciomento.
+
+            </p>
+        </section>
+        <section class="normal">
+        </section>
+        <section class="imagem" id="img04">
+            <p>
+                Jogar com você é uma das coisas que mais gosto de fazer, com toda certeza. <br>
+                Minha mestre no Sky hahaha.
+                Olha só essa foto... Casalsão até no Sky, lindo se de ver néé?? 
+            </p>
+
+        </section>
+        <section class="normal">
+        </section>
+        <section class="imagem" id="img03">
+            <p>
+                .
+
+            </p>
+        </section>
+        <section class="normal">
+        </section>
+        <section class="imagem" id="img05">
+            <p>
+                Nessa brincadeirinha que fizemos no nosso mundo de Minecraft parece apenas algo fofo e bobo, né? <br>
+                Mas é exatamente isso que vou fazer com você! <br>
+                Será o dia mais feliz da minha vida, com toda certeza. <br>
+                O momento em que nós dois estaremos frente a frente, junto de algumas testemunhas, assinando 
+                nossa tão sonhada certidão de casamento, certificando e oficialiando nosso amor perante o Estado e todas as outras pessoas, pois nosso amor é algo que 
+                deve ser sim, compartilhado e sabido por todos, eu me orgulho demais por estar do seu lado.
+
+            </p>
+
+        </section>
+    </div>
+    <footer><strong>Site criado por um cara que ama Aline do fundo do coração 💓💗💘</strong> </footer>
+</body>
+
+</html>
